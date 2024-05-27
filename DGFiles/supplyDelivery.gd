@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2784
+Password=2135
 Database=
 DateFormat=
 CommitCount=0
@@ -13,34 +13,34 @@ InitScript=
 
 [Table]
 Owner=WILAMOWS
-Name=FOODDELIVERY
-Count=800
+Name=SUPPLYSDELIVERY
+Count=400
 
 [Record]
-Name=MEALDESCRIPTION
+Name=NEEDSCOOLING
 Type=VARCHAR2
-Size=20
-Data=Components.Description
+Size=3
+Data=List('Yes', 'No')
 Master=
 
 [Record]
-Name=KASHRUS
-Type=VARCHAR2
-Size=20
-Data=Components.Code
+Name=PROVIDERPHONENUM
+Type=NUMBER
+Size=
+Data=Sequence(2000000000, [1], [3000000000])
 Master=
 
 [Record]
-Name=TYPEDM
+Name=PROVIDERADRESS
 Type=VARCHAR2
-Size=1
-Data=List('D', 'M')
+Size=20
+Data=Address1
 Master=
 
 [Record]
 Name=DELIVERYNUM
 Type=NUMBER
 Size=
-Data=Sequence(500, [1], [1300])
+Data=Sequence(100, [1], [400])
 Master=
 
